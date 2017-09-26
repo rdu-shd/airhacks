@@ -38,3 +38,5 @@ https://apievangelist.com/2012/01/12/the-secret-to-amazons-success-internal-apis
 
 https://en.wikipedia.org/wiki/Cargo_cult_programming
 https://www.eclipse.org/mat/
+
+https://martinfowler.com/bliki/TolerantReader.html
