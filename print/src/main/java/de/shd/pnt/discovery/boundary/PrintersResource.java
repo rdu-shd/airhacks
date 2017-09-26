@@ -7,7 +7,9 @@ import javax.inject.Inject;
 import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonArrayBuilder;
+import javax.json.JsonObject;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 
 /**
@@ -30,6 +32,12 @@ public class PrintersResource {
                 forEach(retVal::add);
         return retVal.build();
     }
+
+    @POST
+    public void create(JsonObject printer) {
+        new Printer(printer);
+    }
+
 
 
 }

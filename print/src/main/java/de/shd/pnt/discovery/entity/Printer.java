@@ -16,6 +16,10 @@ public class Printer {
         this.modelName = name;
     }
 
+    public Printer(JsonObject input) {
+        this.modelName = input.getString("name", "not existing");
+    }
+
 
     public JsonObject toJson() {
         return Json.createObjectBuilder().
