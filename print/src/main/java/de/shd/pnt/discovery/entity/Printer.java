@@ -10,16 +10,16 @@ import javax.json.JsonObject;
  */
 public class Printer {
 
-    private String name;
+    private String modelName;
 
     public Printer(String name) {
-        this.name = name;
+        this.modelName = name;
     }
 
 
     public JsonObject toJson() {
         return Json.createObjectBuilder().
-                add("name", this.name).
+                add("name", this.modelName).
                 build();
     }
 
