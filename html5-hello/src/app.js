@@ -14,11 +14,13 @@ class App {
 
     addPrinters(array) { 
         console.log(array);
-        array.map(p => p.name).forEach(a => this.div(a));
+        const [first, second] = array;
+        console.log(first,second);
+        array.forEach(a => this.div(a));
         
     }
 
-    div(content) { 
+    div({ name:content }) { 
         const div = document.createElement("div");
         div.innerText = content;
         this.output.appendChild(div);
