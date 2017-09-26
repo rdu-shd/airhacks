@@ -24,3 +24,17 @@ https://grpc.io/docs/quickstart/java.html
 
 https://electron.atom.io
 
+# Performance
+
+http://openjdk.java.net/projects/code-tools/jmh/
+
+# Test
+
+https://www.browserstack.com
+https://saucelabs.com
+
+
+https://apievangelist.com/2012/01/12/the-secret-to-amazons-success-internal-apis/
+
+https://en.wikipedia.org/wiki/Cargo_cult_programming
+https://www.eclipse.org/mat/

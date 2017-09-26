@@ -2,7 +2,6 @@
 package de.shd.pnt.discovery.boundary;
 
 import de.shd.pnt.discovery.entity.Printer;
-import java.util.Arrays;
 import java.util.List;
 import javax.ejb.Stateless;
 
@@ -14,7 +13,8 @@ import javax.ejb.Stateless;
 public class PrinterDiscovery {
 
     public List<Printer> printers() {
-        return Arrays.asList(new Printer("hp"), new Printer("epson"));
+        throw new LackingPrinterException("cannot find printer");
+        //return null;//Arrays.asList(new Printer("hp"), new Printer("epson"));
     }
 
 }
